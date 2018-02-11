@@ -5,7 +5,7 @@
   "keywords": ["converter", "date", "calendar", "dekatrian", "gregorian" , "vitorteccom"],
   "homepage": "https://devs.vitortec.com/dekajs",
   "license": "GPL-3.0",
-  "main": "src/Person.js",
+  "main": "src/Dekatrian.js",
   "author": "Vitor Guia <vitor.guia@vitortec.com> (https://github.com/vitoranguia)",
   "repository": {
     "type": "git",
