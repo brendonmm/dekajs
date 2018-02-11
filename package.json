@@ -1,0 +1,32 @@
+{
+  "name": "vitorteccom-dekajs",
+  "description": "This is a simple library to convert Dekatrian and Gregorian.",
+  "version": "1.0.0",
+  "keywords": ["converter", "date", "calendar", "dekatrian", "gregorian" , "vitorteccom"],
+  "homepage": "https://devs.vitortec.com/dekajs",
+  "license": "GPL-3.0",
+  "main": "src/Person.js",
+  "author": "Vitor Guia <vitor.guia@vitortec.com> (https://github.com/vitoranguia)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vitorteccom/dekajs.git"
+  },
+  "bugs": {
+    "email": "contato@vitortec.com",
+    "url": "https://github.com/vitorteccom/dekajs/issues"
+  },
+  "devDependencies": {
+    "eslint": "^4.17.0",
+    "eslint-config-standard": "^11.0.0-beta.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^6.0.0",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^5.0",
+    "nyc": "^11.4"
+  },
+  "scripts": {
+    "check-style": "eslint src/ tests/",
+    "test": "nyc mocha --timeout=3000 tests/*Test.js"
+  }
+}

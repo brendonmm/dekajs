@@ -1,0 +1,27 @@
+# language: js
+filter:
+    paths:
+        - src/
+    excluded_paths:
+        - docs/
+        - examples/
+        - tests/
+checks:
+    javascript: true
+build:
+    nodes:
+        node620:
+            environment:
+                node: v6.2.0
+            dependencies:
+                override:
+                    - npm install
+            tests:
+                override:
+                    - node_modules/.bin/eslint src/ tests/
+                    -
+                        command: node_modules/.bin/nyc --reporter=clover node_modules/.bin/mocha tests/*Test.js
+                        coverage:
+                            file: coverage/clover.xml
+                            format: clover
+                    - php-scrutinizer-run
