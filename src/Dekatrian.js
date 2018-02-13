@@ -3,7 +3,6 @@
  *
  * ECMAScript Version 6
  *
- * @package   Vitorteccom\Dekajs
  * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
@@ -14,7 +13,6 @@
 /**
   * Dekatrian class
   *
-  * @package   Vitorteccom\Dekajs\Dekatrian
   * @author    Vitor Guia <vitor.guia@vitortec.com>
   * @copyright 2011-2018 Vitortec.com
   * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
