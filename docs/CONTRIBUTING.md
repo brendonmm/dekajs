@@ -7,7 +7,7 @@ We accept contributions via Pull Requests.
 
 ## Pull Requests
 
-- **[Coding Style Standard](https://github.com/standard/standard)** - Check the code style with ``$ npm run check-style``.
+- **[Coding Style Standard](https://github.com/standard/standard)** - Check the code style with ``$ npm run check-style`` and fix it with ``$ npm run fix-style``.
 
 - **Add tests!** - Your patch won't be accepted if it doesn't have tests.
 
