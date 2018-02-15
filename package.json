@@ -16,17 +16,13 @@
     "url": "https://github.com/vitorteccom/dekajs/issues"
   },
   "devDependencies": {
-    "eslint": "^4.17.0",
-    "eslint-config-standard": "^11.0.0-beta.0",
-    "eslint-plugin-import": "^2.8.0",
-    "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-promise": "^3.6.0",
-    "eslint-plugin-standard": "^3.0.1",
+    "standard": "^10.0",
     "mocha": "^5.0",
     "nyc": "^11.4"
   },
   "scripts": {
-    "check-style": "eslint src/ tests/",
+    "fix-style": "standard --fix \"src/**/*.js\" \"tests/**/*.js\"",
+    "check-style": "standard \"src/**/*.js\" \"tests/**/*.js\"",
     "test": "nyc mocha --timeout=3000 tests/*Test.js"
   }
 }
