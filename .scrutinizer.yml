@@ -18,7 +18,8 @@ build:
                     - npm install
             tests:
                 override:
-                    - node_modules/.bin/eslint src/ tests/
+                    - node_modules/.bin/standard --fix \"src/**/*.js\" \"tests/**/*.js\"
+                    - node_modules/.bin/standard \"src/**/*.js\" \"tests/**/*.js\"
                     -
                         command: node_modules/.bin/nyc --reporter=clover node_modules/.bin/mocha tests/*Test.js
                         coverage:
