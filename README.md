@@ -7,7 +7,6 @@ DEKAtrian for JavaScript
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vitorteccom/dekajs/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekajs/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/vitorteccom/dekajs/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekajs/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/vitorteccom/dekajs/badges/build.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekajs/build-status/master)
-[![Code Intelligence Status](https://scrutinizer-ci.com/g/vitorteccom/dekajs/badges/code-intelligence.svg?b=master)](https://scrutinizer-ci.com/code-intelligence)
 
 This is a simple library for converting dates between [Dekatrian](https://www.facebook.com/dekatrian/) and [Gregorian](https://en.wikipedia.org/wiki/Adoption_of_the_Gregorian_calendar) calendars. This library is not official.
 
