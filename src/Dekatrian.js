@@ -23,6 +23,7 @@ class Dekatrian {
    * Check Leap year
    *
    * @param  {integer} year Dekatrian year
+   *
    * @return {boolean}      Dekatrian year is leap or not
    */
   checkLeapYear (year) {
@@ -41,6 +42,7 @@ class Dekatrian {
    * @param  {integer} year  Dekatrian year
    * @param  {integer} month Dekatrian month
    * @param  {integer} day   Dekatrian day
+   *
    * @return {boolean}       Dekatrian date is valid or not
    */
   checkDekatrian (year, month, day) {
@@ -65,6 +67,7 @@ class Dekatrian {
    * @param  {integer} year  Dekatrian year
    * @param  {integer} month Dekatrian month
    * @param  {integer} day   Dekatrian day
+   *
    * @return {string}        Gregorian date eg. 2018-12-31
    */
   dekatoGreg (year, month, day) {
@@ -103,6 +106,7 @@ class Dekatrian {
    * @param  {integer} year  Gregorian year
    * @param  {integer} month Gregorian month
    * @param  {integer} day   Gregorian day
+   *
    * @return {string}        Dekatrian date eg. 2018-13-28
    */
   gregToDeka (year, month, day) {
