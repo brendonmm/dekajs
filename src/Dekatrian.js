@@ -5,7 +5,7 @@
  *
  * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
- * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
+ * @license   GPL-3.0-or-later
  * @version   GIT: <git_id>
  * @see       https://devs.vitortec.com/dekajs Documentation of Dekajs
  */
@@ -15,7 +15,7 @@
   *
   * @author    Vitor Guia <vitor.guia@vitortec.com>
   * @copyright 2011-2018 Vitortec.com
-  * @license   https://www.gnu.org/licenses/gpl-3.0.en.html GPLv3
+  * @license   GPL-3.0-or-later
   * @see       https://devs.vitortec.com/dekajs Documentation of Dekajs
   */
 class Dekatrian {
