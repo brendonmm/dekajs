@@ -1,22 +1,20 @@
 /**
- * Vitortec.com Dekajs
- *
- * ECMAScript Version 6
- *
+ * @file      Vitortec.com Dekajs
+ * @version   1.0.1
  * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
  * @license   GPL-3.0-or-later
- * @version   GIT: <git_id>
- * @see       https://devs.vitortec.com/dekajs Documentation of Dekajs
+ * @see       {@link https://devs.vitortec.com/dekajs|Documentation of Dekajs}
  */
 
 /**
   * Dekatrian class
   *
+  * @version   1.0.1
   * @author    Vitor Guia <vitor.guia@vitortec.com>
   * @copyright 2011-2018 Vitortec.com
   * @license   GPL-3.0-or-later
-  * @see       https://devs.vitortec.com/dekajs Documentation of Dekajs
+  * @see       {@link https://devs.vitortec.com/dekajs|Documentation of Dekajs}
   */
 class Dekatrian {
   /**
