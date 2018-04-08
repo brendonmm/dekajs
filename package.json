@@ -1,10 +1,17 @@
 {
   "name": "vitorteccom-dekajs",
   "description": "This is a simple library to convert Dekatrian and Gregorian.",
-  "version": "1.0.1",
-  "keywords": ["converter", "date", "calendar", "dekatrian", "gregorian" , "vitorteccom"],
+  "version": "2.0.0",
+  "keywords": [
+    "converter",
+    "date",
+    "calendar",
+    "dekatrian",
+    "gregorian",
+    "vitorteccom"
+  ],
   "homepage": "https://devs.vitortec.com/dekajs",
-  "license": "GPL-3.0",
+  "license": "GPL-3.0-or-later",
   "main": "src/Dekatrian.js",
   "author": "Vitor Guia <vitor.guia@vitortec.com> (https://github.com/vitoranguia)",
   "repository": {
