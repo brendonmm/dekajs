@@ -2,8 +2,8 @@
 DEKAtrian for JavaScript
 
 [![Software License](https://img.shields.io/github/license/vitorteccom/dekajs.svg)](LICENSE)
-[![Latest Version on NPM](https://img.shields.io/npm/v/vitorteccom-dekajs.svg)](https://npmjs.org/packages/vitorteccom-dekajs)
-[![Total Downloads](https://img.shields.io/npm/dt/vitorteccom-dekajs.svg)](https://npmjs.org/packages/vitorteccom-dekajs)
+[![Latest Version on NPM](https://img.shields.io/npm/v/vitorteccom-dekajs.svg)](https://npmjs.org/package/vitorteccom-dekajs)
+[![Total Downloads](https://img.shields.io/npm/dt/vitorteccom-dekajs.svg)](https://npmjs.org/package/vitorteccom-dekajs)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/vitorteccom/dekajs/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekajs/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/vitorteccom/dekajs/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekajs/?branch=master)
 [![Build Status](https://scrutinizer-ci.com/g/vitorteccom/dekajs/badges/build.png?b=master)](https://scrutinizer-ci.com/g/vitorteccom/dekajs/build-status/master)
@@ -29,38 +29,36 @@ tests/
 
 Via NPM.
 
-``` bash
+```bash
 $ npm install vitorteccom-dekajs
 ```
 
 ## Usage
 This is minimal example node.
 
-``` javascript
+```javascript
 var Dekatrian = require('vitorteccom-dekajs')
-
-var dekajs = new Dekatrian()
 ```
 
-Check date is valid.
+Check if a Dekatrian date is valid or not.
 
-``` javascript
-dekajs.checkDekatrian(2018, 13, 28)
-//Return boolean, true.
+```javascript
+Dekatrian.checkDekatrian(2018, 13, 28)
+// Return boolean, true
 ```
 
-Convert from dekatrian to gregorian.
+Convert from Dekatrian to Gregorian calendars.
 
-``` javascript
-dekajs.dekatoGreg(2018, 13, 28)
-//Return string, 2018-12-31.
+```javascript
+Dekatrian.dekatoGreg(2018, 13, 28)
+// Return string, 2018-12-31
 ```
 
-Convert from gregorian to dekatrian.
+Convert from Gregorian to Dekatrian calendars.
 
-``` javascript
-dekajs.gregToDeka(2018, 12, 31)
-//Return string, 2018-13-28.
+```javascript
+Dekatrian.gregToDeka(2018, 12, 31)
+// Return string, 2018-13-28
 ```
 
 ## Change log
@@ -70,7 +68,7 @@ Please see [CHANGELOG](docs/CHANGELOG.md) for more information on what has chang
 ## Testing
 Test with [Mocha](https://mochajs.org), we also recommend [Istanbul](https://istanbul.js.org).
 
-``` bash
+```bash
 $ npm run test
 ```
 
@@ -89,4 +87,4 @@ If you discover any security related issues, please email ``contato@vitortec.com
 
 ## License
 
-GPLv3. Please see [License File](LICENSE) for more information.
+GPL-3.0-or-later. Please see [License File](LICENSE) for more information.

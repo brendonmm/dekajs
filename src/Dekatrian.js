@@ -1,5 +1,5 @@
 /**
- * @file      Vitortec.com Dekajs
+ * @file      Dekatrian.js
  * @version   1.0.1
  * @author    Vitor Guia <vitor.guia@vitortec.com>
  * @copyright 2011-2018 Vitortec.com
@@ -8,7 +8,7 @@
  */
 
 /**
-  * Dekatrian class
+  * Some methods to convert dates between Dekatrian and Gregorian calendar
   *
   * @version   1.0.1
   * @author    Vitor Guia <vitor.guia@vitortec.com>
@@ -18,13 +18,15 @@
   */
 class Dekatrian {
   /**
-   * Check Leap year
+   * Check if a year is leap year or not
    *
-   * @param  {integer} year Dekatrian year
+   * @private
    *
-   * @return {boolean}      Dekatrian year is leap or not
+   * @param {integer} year Dekatrian year
+   *
+   * @return {boolean} Dekatrian year is leap year or not
    */
-  checkLeapYear (year) {
+  static checkLeapYear (year) {
     if (year % 4 === 0 && year % 100 !== 0) {
       return true
     }
@@ -35,15 +37,15 @@ class Dekatrian {
   }
 
   /**
-   * Check Dekatrian
+   * Check if a Dekatrian date is valid or not
    *
-   * @param  {integer} year  Dekatrian year
-   * @param  {integer} month Dekatrian month
-   * @param  {integer} day   Dekatrian day
+   * @param {integer} year  Dekatrian year
+   * @param {integer} month Dekatrian month
+   * @param {integer} day   Dekatrian day
    *
-   * @return {boolean}       Dekatrian date is valid or not
+   * @return {boolean} Dekatrian date is valid or not
    */
-  checkDekatrian (year, month, day) {
+  static checkDekatrian (year, month, day) {
     if (this.checkLeapYear(year)) {
       if (month === 0 && day > 2) {
         return false
@@ -60,15 +62,15 @@ class Dekatrian {
   }
 
   /**
-   * Dekatrian to Gregorian
+   * Convert a Dekatrian date to Gregorian date
    *
-   * @param  {integer} year  Dekatrian year
-   * @param  {integer} month Dekatrian month
-   * @param  {integer} day   Dekatrian day
+   * @param {integer} year  Dekatrian year
+   * @param {integer} month Dekatrian month
+   * @param {integer} day   Dekatrian day
    *
-   * @return {string}        Gregorian date eg. 2018-12-31
+   * @return {string} Gregorian date eg. 2018-12-31
    */
-  dekatoGreg (year, month, day) {
+  static dekatoGreg (year, month, day) {
     if (!this.checkDekatrian(year, month, day)) {
       return false
     }
@@ -99,15 +101,15 @@ class Dekatrian {
   }
 
   /**
-   * Gregorian to Dekatrian
+   * Convert a Gregorian date to Dekatrian dat
    *
-   * @param  {integer} year  Gregorian year
-   * @param  {integer} month Gregorian month
-   * @param  {integer} day   Gregorian day
+   * @param {integer} year  Gregorian year
+   * @param {integer} month Gregorian month
+   * @param {integer} day   Gregorian day
    *
-   * @return {string}        Dekatrian date eg. 2018-13-28
+   * @return{string} Dekatrian date eg. 2018-13-28
    */
-  gregToDeka (year, month, day) {
+  static gregToDeka (year, month, day) {
     var yearDay = [0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334]
     yearDay = yearDay[month] + day - 1
 
